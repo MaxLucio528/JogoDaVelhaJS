@@ -1,0 +1,79 @@
+<!--
+    FT - FACULDADE DE TECNOLOGIA DA UNICAMP
+
+    SI401 - PROGRAMAÇÃO PARA A WEB
+
+    NOME: Max Lucio Martins de Assis
+    RA: 222444
+
+    Site: Jogo da Velha com JavaScript
+-->
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <!-- 
+            Título da página, codificação da página em UTF-8, viewport para interface mobile
+            amigável, link para o CSS, link para o ícone exibido na aba do navegador e referência
+            para o script usado na página.
+        -->
+        <title>Jogo da Velha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheets/light.css" id="stylesheet">
+        <link rel="icon" href="images/jvicon.png">
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <!-- 
+            Informações simples como título, um parágrafo que explica brevemete sobre o jogo
+            da velha e a fonte de onde as informações foram tiradas.
+        -->
+        <h1>Jogo da Velha</h1>
+        <p>O jogo da velha (pt-BR) ou jogo do galo (pt) ou três em linha é um jogo 
+            e passatempo popular. É um jogo de regras extremamente simples, que não 
+            traz grandes dificuldades para seus jogadores e é facilmente aprendido. 
+            A origem é desconhecida, com indicações de que pode ter começado no antigo 
+            Egito, onde foram encontrados tabuleiros esculpidos na rocha, que teriam mais 
+            de 3.500 anos. De alguma forma, é um jogo "aparentado" dos "Merels".</p>
+        <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Jogo_da_velha" target="blank_">Wikipedia</a></p>
+        <!-- 
+            Clicando aqui o CSS da página é trocado para o Modo Escuro, deixando o layout
+            do site mais amigável para uso durante a noite.
+        -->
+        <p id="modotela" onclick="modoTela(this.id)">Modo Escuro &#9790;</p>
+        <!--
+            Tabela onde o jogo será jogado, porém as partes da tabela só estarão disponível
+            para poder jogar após o botão abaixo ser clicado, validando a partida.
+        -->
+        <table>
+            <tr>
+                <td id="casa1" onclick="jogar(this.id)"></td>
+                <td id="casa2" onclick="jogar(this.id)"></td>
+                <td id="casa3" onclick="jogar(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="casa4" onclick="jogar(this.id)"></td>
+                <td id="casa5" onclick="jogar(this.id)"></td>
+                <td id="casa6" onclick="jogar(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="casa7" onclick="jogar(this.id)"></td>
+                <td id="casa8" onclick="jogar(this.id)"></td>
+                <td id="casa9" onclick="jogar(this.id)"></td>
+            </tr>
+        </table>
+        <!--
+            Parágrafo que irá exibir o estado do jogo a partir do script.
+        -->
+        <p id="status"></p>
+        <!--
+            Botão que validará o início do jogo e posteriormente dará a opção
+            de atualizar a página para jogar novamente após o final da partida.
+        -->
+        <button id="play" onclick="start()">Jogar!</button>
+
+        <p id="foot">Copyright &copy; 2019 por Max Lucio. Uso apenas para entretenimento. Criado como atividade
+            para o Prof. Dr. Guilherme Coelho para a disciplina de Programação para a Web.
+        </p>
+    </body>
+</html>
