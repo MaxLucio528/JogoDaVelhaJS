@@ -1,10 +1,7 @@
 /*
     FT - FACULDADE DE TECNOLOGIA DA UNICAMP
 
-    SI401 - PROGRAMAÇÃO PARA A WEB
-
     Nome: Max Lucio Martins de Assis
-    RA: 222444
 
     Site: Jogo da Velha com JavaScript
 */
