@@ -1,10 +1,12 @@
 /*
-    FT - FACULDADE DE TECNOLOGIA DA UNICAMP
-
-    Nome: Max Lucio Martins de Assis
-
-    Site: Jogo da Velha com JavaScript
-*/
+ *  JogoDaVelhaJS
+ *  CONTRIBUITORS:
+ *  -> Max Lucio Martins de Assis (GitHub - MaxLucio528)
+ * 
+ *  PURPOSE: This project is a simple website that has the famous "Jogo da Velha" implemented
+ *  with JavaScript, it comes with a Dark Mode as well to play at night. It's compatible with
+ *  (probably) any web browser.
+ */
 
 body{
     margin: 0px;
@@ -18,27 +20,35 @@ h1{
     text-align: center;
 }
 
+/* Adjusting the text on the page to be justified em have 10% of margin. */
 p{
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+/* This paragraph is actually a button used with JavaScript to change the page stylesheet. */
 p#modotela{
     text-align: center;
     font-size: 20px;
 }
 
+/* Will show the game status when it starts. */
 p#status{
     text-align: center;
     margin-top: 50px;
 }
 
+/* Will show the legal information about the website. */
 p#foot{
     margin-top: 50px;
     text-align: center;
 }
 
+/*
+ *  This button is reponsible for starting the match, he's adjusted to be placed
+ *  at the center of the page. It has a diffent color here on Dark Mode.
+ */
 button#play{
     display: block;
     margin-top: 50px;
@@ -51,6 +61,10 @@ button#play{
     background-color: #363636;
 }
 
+/*  
+ *  The only link on the page redirects to Wikipedia, where the description of the 
+ *  game was obtained. 
+ */
 a{
     color: lightskyblue;
     text-decoration: none;
@@ -60,6 +74,10 @@ a:hover{
     color: deepskyblue;
 }
 
+/* 
+ *  Formatting the table to have nine squares, where X and O will be put by the players.
+ *  It has a diffent color here on Dark Mode.
+ */
 table{
     border: 4px solid white;
     border-collapse: collapse;

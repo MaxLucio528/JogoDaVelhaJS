@@ -1,9 +1,11 @@
 <!--
-    FT - FACULDADE DE TECNOLOGIA DA UNICAMP
+    JogoDaVelhaJS
+    CONTRIBUITORS:
+    -> Max Lucio Martins de Assis (GitHub - MaxLucio528)
 
-    NOME: Max Lucio Martins de Assis
-
-    Site: Jogo da Velha com JavaScript
+    PURPOSE: This project is a simple website that has the famous "Jogo da Velha" implemented
+    with JavaScript, it comes with a Dark Mode as well to play at night. It's compatible with
+    (probably) any web browser.
 -->
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,26 +23,26 @@
         <script src="scripts/script.js"></script>
     </head>
     <body>
-        <!-- 
-            Informações simples como título, um parágrafo que explica brevemete sobre o jogo
-            da velha e a fonte de onde as informações foram tiradas.
+        <!--
+            Simple information like the title, a paragraph that explains briefly about the
+            "Jogo da Velha" and the source from where the information was obtained.
         -->
         <h1>Jogo da Velha</h1>
-        <p>O jogo da velha (pt-BR) ou jogo do galo (pt) ou três em linha é um jogo 
-            e passatempo popular. É um jogo de regras extremamente simples, que não 
-            traz grandes dificuldades para seus jogadores e é facilmente aprendido. 
-            A origem é desconhecida, com indicações de que pode ter começado no antigo 
-            Egito, onde foram encontrados tabuleiros esculpidos na rocha, que teriam mais 
-            de 3.500 anos. De alguma forma, é um jogo "aparentado" dos "Merels".</p>
-        <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Jogo_da_velha" target="blank_">Wikipedia</a></p>
-        <!-- 
-            Clicando aqui o CSS da página é trocado para o Modo Escuro, deixando o layout
-            do site mais amigável para uso durante a noite.
-        -->
-        <p id="modotela" onclick="modoTela(this.id)">Modo Escuro &#9790;</p>
+        <p>The "Jogo da Velha" (PT-BR), or "Jogo do Galo" (PT-PT) or even "Três em Linha" is a
+            game and a popular hobby. Is a game of extremely simple rules, it doesn't bring
+            great difficulties to it's players and is easily learned. The origin is unknown,
+            with indications that it could be started in ancient Egypt, where it was found boards
+            carved in stone, that would have more than 3,500 years. Somehow, its a game "akin" to
+            "Merels".</p>
+        <p>Source (PT-BR): <a href="https://pt.wikipedia.org/wiki/Jogo_da_velha" target="blank_">Wikipedia</a></p>
         <!--
-            Tabela onde o jogo será jogado, porém as partes da tabela só estarão disponível
-            para poder jogar após o botão abaixo ser clicado, validando a partida.
+            Clicking here the CSS of the page is switched to a Dark Mode, leaving the layout
+            more friendly to use at night.
+        -->
+        <p id="modotela" onclick="modoTela(this.id)">Dark Mode &#9790;</p>
+        <!--
+            Table where the game will be played, but the board parts will only be available
+            to be played after the button below is clicked, validating the match.
         -->
         <table>
             <tr>
@@ -60,17 +62,17 @@
             </tr>
         </table>
         <!--
-            Parágrafo que irá exibir o estado do jogo a partir do script.
+            Will exhibit the game status via script.
         -->
         <p id="status"></p>
         <!--
-            Botão que validará o início do jogo e posteriormente dará a opção
-            de atualizar a página para jogar novamente após o final da partida.
+            Validates the start of the match and posteriorly it will give the
+            option to refresh the page to play again after the match ends.
         -->
-        <button id="play" onclick="start()">Jogar!</button>
+        <button id="play" onclick="start()">Play!</button>
 
-        <p id="foot">Copyright &copy; 2019 por Max Lucio. Uso apenas para entretenimento. Criado como atividade
-            para o Prof. Dr. Guilherme Coelho para a disciplina de Programação para a Web.
+        <p id="foot">Copyright &copy; 2019 by Max Lucio. Made only for entertainment. Created as activity for
+            Dr. Guilherme Coelho for the subject of Web Programming in School of Technology - UNICAMP.
         </p>
     </body>
 </html>
